@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Share+Tech+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+.active{
+    color: #fff !important;
+}
+.text-justify{
+    text-align: justify !important;
+}
+.profile-menu .dropdown-menu {
+    right: 0;
+    left: unset;
+}
+.profile-menu .fa-fw {
+    margin-right: 10px;
+}
+.toggle-change::after {
+    border-top: 0;
+    border-bottom: 0.3em solid;
+}
+.navbar{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    z-index: 100;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-family: "Oswald", Impact;
+}
+.navbar-brand{
+    font-weight: 100;
+}
+.nav-item{
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.bg-purple{
+    background-color: rgb(94, 42, 23);
+}
+.bg-pink-half{
+    background-color: #b94a009e;
+}
+.showcase{
+    height: 100vh;
+    width: 100%;
+    background: url(https://i.pinimg.com/originals/16/65/a7/1665a7ae96ba9e767182d472c8f4f52e.jpg) top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    background-attachment: fixed;
+}
+.showcase:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.showcase-abs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.showcase-abs h1{
+    font-family: 'Oswald', Impact;
+    font-size: 4rem;
+    color: orange;
+    margin-bottom: 1rem;
+}
+.orange-outline-btn{
+    font-family: 'Share Tech Mono';
+    font-size: 20px;
+    color: #fff;
+    background: none;
+    border: 4px solid orange;
+    padding: 8px 20px;
+    transition: 0.4s ease-out;
+}
+.orange-outline-btn:hover{
+    background: orange;
+    color: #000;
+}
+.heading{
+    color: orange;
+    font-family: 'Oswald', Impact;
+}
