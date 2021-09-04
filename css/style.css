@@ -9,11 +9,31 @@ a{
 p{
     font-family: 'Montserrat', sans-serif;
 }
+h5{
+    font-family: 'Montserrat', sans-serif;
+}
+#organizers ul{
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#organizers li { 
+    padding-left: 16px; 
+}
+#organizers li::before {
+    content: "➤";
+    padding-right: 8px;
+    color: orange; 
+  }
 .active{
     color: #fff !important;
 }
 .text-justify{
     text-align: justify !important;
+}
+.pos-rel{
+    position: relative;
 }
 .profile-menu .dropdown-menu {
     right: 0;
@@ -94,7 +114,107 @@ p{
     background: orange;
     color: #000;
 }
+.orange-round-btn{
+    font-family: 'Share Tech Mono';
+    font-size: 17px;
+    color: #000;
+    background: orange;
+    border: 4px solid orange;
+    border-radius: 40px;
+    padding: 6px 24px;
+    transition: 0.4s ease-out;
+}
+.orange-round-btn:hover{
+    color: orange;
+    background: none;
+}
 .heading{
     color: orange;
     font-family: 'Oswald', Impact;
+    text-shadow: 1px 1px 2px #6f4c0b;
+}
+.sub-heading{
+    color: orange;
+    font-family: 'Oswald', Impact;
+    margin-bottom: 1.2rem;
+    text-shadow: 1px 1px 2px #6f4c0b;
+}
+#organizers{
+    background-image: url('https://img.wallpapersafari.com/desktop/1680/1050/51/13/7hFlVv.jpg');
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    background-attachment: fixed;
+}
+#organizers:before {
+    content: "";
+    background: rgba(211, 211, 211, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.gcard{
+    background: rgba(158, 158, 158, 12%);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-radius: 0px;
+    box-shadow: 2px 2px 8px #9e9e9e;
+    transition: 0.4s ease-out;
+}
+.gcard:hover{
+    border-radius: 20px;
+}
+.wcard {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    transition: all ease-in-out 0.3s;
+    background: white;
+    height: 400px;
+    justify-content: center;
+    position: relative;
+    
+}
+.wcard:hover .wcard-abs{
+    transform: translate(-50%, -65%);
+}
+.wcard-abs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.4s ease-out;
+    width: 80%;
+}
+.time-date{
+    color: cornflowerblue;
+}
+#timeline{
+    background-image: url('https://img.wallpapersafari.com/desktop/1680/1050/51/13/7hFlVv.jpg');
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    background-attachment: fixed;
+}
+#timeline:before {
+    content: "";
+    background: rgba(211, 211, 211, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+footer{
+    background-color: rgb(94, 42, 23);
+}
+.credit{
+    border-radius: 20px 20px 0 0;
+}
+.credit a{
+    color: orange;
+}
+.credit a:hover{
+    color: rgb(255, 204, 110);
 }
