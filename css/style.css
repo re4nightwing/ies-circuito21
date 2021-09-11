@@ -12,16 +12,37 @@ p{
 h5{
     font-family: 'Montserrat', sans-serif;
 }
-#organizers ul{
+.loading{
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.loading h1{
+    font-family: "Oswald", Impact;
+    font-weight: bold;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../img/loading.jpg');
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 60s linear infinite;
+}
+#mark ul{
     font-family: 'Montserrat', sans-serif;
     list-style: none;
     padding: 0;
     margin: 0;
 }
-#organizers li { 
+#mark li { 
     padding-left: 16px; 
 }
-#organizers li::before {
+#mark li::before {
     content: "➤";
     padding-right: 8px;
     color: orange; 
@@ -74,7 +95,7 @@ h5{
 .showcase{
     height: 100vh;
     width: 100%;
-    background: url(https://i.pinimg.com/originals/16/65/a7/1665a7ae96ba9e767182d472c8f4f52e.jpg) top center;
+    background: url('../img/1.jpg') top center;
     background-size: cover;
     position: relative;
     padding: 0;
@@ -140,7 +161,7 @@ h5{
     text-shadow: 1px 1px 2px #6f4c0b;
 }
 #organizers{
-    background-image: url('https://img.wallpapersafari.com/desktop/1680/1050/51/13/7hFlVv.jpg');
+    background-image: url('../img/3.jpg');
     background-size: cover;
     position: relative;
     padding: 0;
@@ -165,6 +186,7 @@ h5{
 }
 .gcard:hover{
     border-radius: 20px;
+    box-shadow: 2px 2px 8px #494949;
 }
 .wcard {
     padding: 50px 30px;
@@ -190,14 +212,14 @@ h5{
 .time-date{
     color: cornflowerblue;
 }
-#timeline{
-    background-image: url('https://img.wallpapersafari.com/desktop/1680/1050/51/13/7hFlVv.jpg');
+#registration{
+    background-image: url('../img/2.jpg');
     background-size: cover;
     position: relative;
     padding: 0;
     background-attachment: fixed;
 }
-#timeline:before {
+#registration:before {
     content: "";
     background: rgba(211, 211, 211, 0.6);
     position: absolute;
@@ -217,4 +239,39 @@ footer{
 }
 .credit a:hover{
     color: rgb(255, 204, 110);
+}
+.abs-para{
+    position: relative;
+}
+.abs-para p{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@media (max-width: 991.98px) {
+    .abs-para p{
+        margin-top: 2rem;
+        width: auto;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0,0);
+    }
+}
+.card-block{
+    height: 300px;
+}
+
+
+
+@keyframes animate {
+	from {
+	    background-position: 0 0;
+	}
+	/*use negative width if you want it to flow right to left else and positive for left to right*/
+	to {
+        background-position: -10000px 0;
+	}
 }
